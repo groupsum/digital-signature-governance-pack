@@ -1,0 +1,59 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ssot-registry-pack-template"
+version = "0.1.0"
+description = "Template repository for installable SSOT Registry ADR and SPEC governance packs."
+readme = "README.md"
+requires-python = ">=3.10,<3.14"
+license = "Apache-2.0"
+authors = [{ name = "Jacob Stewart", email = "jacob@swarmauri.com" }]
+dependencies = ["tomli>=2.0.1; python_version < '3.11'"]
+keywords = [
+  "ssot",
+  "ssot-registry",
+  "extension-pack",
+  "governance-pack",
+  "template",
+  "governance",
+  "adr",
+  "spec",
+  "uv",
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Information Technology",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Software Development :: Documentation",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "Topic :: Software Development :: Quality Assurance",
+  "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://github.com/groupsum/ssot-registry-pack-template"
+Repository = "https://github.com/groupsum/ssot-registry-pack-template"
+Issues = "https://github.com/groupsum/ssot-registry-pack-template/issues"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"ssot_registry_pack_template.templates.adr" = ["*.json", "*.yaml"]
+"ssot_registry_pack_template.templates.specs" = ["*.json", "*.yaml"]
+
+[dependency-groups]
+dev = []

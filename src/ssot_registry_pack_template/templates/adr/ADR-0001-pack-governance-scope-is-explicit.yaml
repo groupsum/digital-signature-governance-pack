@@ -1,0 +1,31 @@
+{
+  "id": "adr:0001",
+  "number": 1,
+  "slug": "pack-governance-scope-is-explicit",
+  "title": "Pack governance scope is explicit",
+  "status": "accepted",
+  "origin": "ssot-registry-pack-template",
+  "decision_date": "2026-05-10",
+  "supersedes": [],
+  "superseded_by": [],
+  "status_notes": [
+    "Template placeholder ADR. Replace this with the first domain decision before publishing a concrete pack."
+  ],
+  "context": [
+    "An SSOT Registry governance pack must not imply broad compliance or implementation coverage by package name alone.",
+    "Each concrete pack needs a reviewed domain boundary before downstream repositories consume its ADR and SPEC documents."
+  ],
+  "decision": [
+    "Every derived pack SHALL state its governance scope explicitly.",
+    "Every derived pack SHALL identify which standards, policies, or product surfaces are in scope before adding detailed requirements.",
+    "Out-of-scope or watchlist surfaces SHALL stay visible as future candidates instead of being silently omitted when they are likely to be confused with supported surfaces."
+  ],
+  "consequences": [
+    "Downstream repositories can adopt pack documents without inheriting unstated obligations.",
+    "Future ADRs and SPECs can be split by governed behavior surface and linked to local features, tests, claims, and evidence."
+  ],
+  "references": [
+    "SSOT Registry pack authoring",
+    "docs/governance/pack-authoring-guide.md"
+  ]
+}
