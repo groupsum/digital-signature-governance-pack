@@ -3,9 +3,9 @@ requires = ["setuptools>=69", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "ssot-registry-pack-template"
+name = "digital-signature-governance-pack"
 version = "0.1.0"
-description = "Template repository for installable SSOT Registry ADR and SPEC governance packs."
+description = "Installable ADR and SPEC extension pack for digital-signature and container governance."
 readme = "README.md"
 requires-python = ">=3.10,<3.14"
 license = "Apache-2.0"
@@ -15,8 +15,14 @@ keywords = [
   "ssot",
   "ssot-registry",
   "extension-pack",
-  "governance-pack",
-  "template",
+  "digital-signature",
+  "signature",
+  "pades",
+  "xades",
+  "cades",
+  "asic",
+  "timestamping",
+  "validation",
   "governance",
   "adr",
   "spec",
@@ -41,9 +47,9 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/groupsum/ssot-registry-pack-template"
-Repository = "https://github.com/groupsum/ssot-registry-pack-template"
-Issues = "https://github.com/groupsum/ssot-registry-pack-template/issues"
+Homepage = "https://github.com/groupsum/digital-signature-governance-pack"
+Repository = "https://github.com/groupsum/digital-signature-governance-pack"
+Issues = "https://github.com/groupsum/digital-signature-governance-pack/issues"
 
 [tool.setuptools]
 package-dir = {"" = "src"}
@@ -52,8 +58,8 @@ package-dir = {"" = "src"}
 where = ["src"]
 
 [tool.setuptools.package-data]
-"ssot_registry_pack_template.templates.adr" = ["*.json", "*.yaml"]
-"ssot_registry_pack_template.templates.specs" = ["*.json", "*.yaml"]
+"digital_signature_governance_pack.templates.adr" = ["*.json", "*.yaml"]
+"digital_signature_governance_pack.templates.specs" = ["*.json", "*.yaml"]
 
 [dependency-groups]
 dev = []

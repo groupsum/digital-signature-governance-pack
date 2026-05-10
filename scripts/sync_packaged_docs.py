@@ -13,8 +13,8 @@ except ModuleNotFoundError:  # pragma: no cover
 ROOT = Path(__file__).resolve().parents[1]
 ADR_SOURCE = ROOT / ".ssot" / "adr"
 SPEC_SOURCE = ROOT / ".ssot" / "specs"
-ADR_TARGET = ROOT / "src" / "ssot_registry_pack_template" / "templates" / "adr"
-SPEC_TARGET = ROOT / "src" / "ssot_registry_pack_template" / "templates" / "specs"
+ADR_TARGET = ROOT / "src" / "digital_signature_governance_pack" / "templates" / "adr"
+SPEC_TARGET = ROOT / "src" / "digital_signature_governance_pack" / "templates" / "specs"
 
 
 def _project_version() -> str:

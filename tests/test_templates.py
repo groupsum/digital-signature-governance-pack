@@ -3,7 +3,7 @@ from __future__ import annotations
 import json
 import unittest
 
-from ssot_registry_pack_template import load_document_manifest, read_packaged_document_text
+from digital_signature_governance_pack import load_document_manifest, read_packaged_document_text
 
 
 class TemplateManifestTests(unittest.TestCase):
@@ -12,7 +12,7 @@ class TemplateManifestTests(unittest.TestCase):
         self.assertEqual(1, len(manifest))
         self.assertEqual(
             [
-                "adr:0001",
+                "adr:0900",
             ],
             [row["id"] for row in manifest],
         )
@@ -22,30 +22,30 @@ class TemplateManifestTests(unittest.TestCase):
         self.assertEqual(1, len(manifest))
         self.assertEqual(
             [
-                "spc:0001",
+                "spc:0900",
             ],
             [row["id"] for row in manifest],
         )
 
     def test_packaged_document_can_be_loaded(self) -> None:
-        text = read_packaged_document_text("spec", "SPEC-0001-pack-document-contract.yaml")
+        text = read_packaged_document_text("spec", "SPEC-0900-digital-signature-governance-target-review.yaml")
         payload = json.loads(text)
-        self.assertEqual("spc:0001", payload["id"])
+        self.assertEqual("spc:0900", payload["id"])
         self.assertEqual("normative", payload["spec_kind"])
 
     def test_packaged_adr_can_be_loaded(self) -> None:
-        text = read_packaged_document_text("adr", "ADR-0001-pack-governance-scope-is-explicit.yaml")
+        text = read_packaged_document_text("adr", "ADR-0900-digital-signature-standards-targets-reviewed-before-inclusion.yaml")
         payload = json.loads(text)
-        self.assertEqual("adr:0001", payload["id"])
+        self.assertEqual("adr:0900", payload["id"])
         self.assertEqual(
-            "Pack governance scope is explicit",
+            "Digital-signature standards targets are reviewed before governance inclusion",
             payload["title"],
         )
 
     def test_packaged_spec_can_be_loaded(self) -> None:
-        text = read_packaged_document_text("spec", "SPEC-0001-pack-document-contract.yaml")
+        text = read_packaged_document_text("spec", "SPEC-0900-digital-signature-governance-target-review.yaml")
         payload = json.loads(text)
-        self.assertEqual("spc:0001", payload["id"])
+        self.assertEqual("spc:0900", payload["id"])
         self.assertEqual("normative", payload["spec_kind"])
 
 

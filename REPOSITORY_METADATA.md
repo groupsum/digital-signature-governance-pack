@@ -2,4 +2,4 @@
 
 Suggested GitHub description:
 
-> Template for installable SSOT Registry governance packs with packaged ADRs, SPECs, manifests, tests, and release-ready Python packaging.
+> Installable SSOT ADR/SPEC extension pack for digital-signature, advanced electronic signature, container, timestamping, validation, archival, and assurance governance.

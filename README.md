@@ -1,68 +1,58 @@
 <div align="center">
 
-<h1>ssot-registry-pack-template</h1>
+<h1>digital-signature-governance-pack</h1>
 
 <p>
-  <a href="https://github.com/groupsum/ssot-registry-pack-template"><img alt="GitHub repo" src="https://img.shields.io/badge/GitHub-groupsum%2Fssot--registry--pack--template-181717?logo=github"></a>
-  <a href="https://github.com/groupsum/ssot-registry-pack-template/blob/master/LICENSE"><img alt="License" src="https://img.shields.io/badge/license-Apache--2.0-blue"></a>
-  <a href="https://github.com/groupsum/ssot-registry-pack-template/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/groupsum/ssot-registry-pack-template/actions/workflows/ci.yml/badge.svg?branch=master"></a>
+  <a href="https://github.com/groupsum/digital-signature-governance-pack"><img alt="GitHub repo" src="https://img.shields.io/badge/GitHub-groupsum%2Fdigital--signature--governance--pack-181717?logo=github"></a>
+  <a href="https://github.com/groupsum/digital-signature-governance-pack/blob/master/LICENSE"><img alt="License" src="https://img.shields.io/badge/license-Apache--2.0-blue"></a>
+  <a href="https://github.com/groupsum/digital-signature-governance-pack/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/groupsum/digital-signature-governance-pack/actions/workflows/ci.yml/badge.svg?branch=master"></a>
 </p>
 
 </div>
 
-`ssot-registry-pack-template` is a starter repository for creating installable SSOT Registry governance packs.
+`digital-signature-governance-pack` is an SSOT Registry pack for digital-signature, advanced electronic signature, container, timestamping, validation, archival, and assurance-language governance.
 
-Use it when a governance domain needs reusable Architecture Decision Records (ADRs), Specifications (SPECs), manifests, tests, and packaging metadata that can be installed beside [`ssot-registry`](https://pypi.org/project/ssot-registry/) and synchronized into downstream repositories.
+It gives product, platform, and compliance teams a reusable ADR/SPEC starting point for repositories that need to govern `PAdES`, `XAdES`, `CAdES`, `ASiC-S`, `ASiC-E`, validation reports, timestamping, certificate and revocation handling, long-term archival evidence, and constrained eIDAS-facing claim language.
 
-## Template Scope
+## What Is An SSOT Registry Pack?
 
-This template provides:
+An SSOT Registry pack is an installable package of governed Architecture Decision Records (ADRs) and Specifications (SPECs) for [`ssot-registry`](https://pypi.org/project/ssot-registry/). The pack supplies reusable decision and requirement documents that downstream repositories can synchronize into their local `.ssot` registry and link to features, tests, claims, evidence, and releases.
 
-- a Python package that exposes packaged ADR and SPEC documents
-- manifest loaders for pack-aware SSOT Registry workflows
-- placeholder ADR and SPEC documents that demonstrate the required shape
-- tests that verify manifest rows and packaged documents stay loadable
-- a document sync script for copying repo-local `.ssot` source documents into package data
-- CI and publish workflow placeholders suitable for a new governance-pack repository
+## Domain Focus
 
-## Create A Pack From This Template
+The initial review surface is grounded in TrustSig's `signature_and_container_standards_matrix.md` and covers:
 
-Create a new private repository from this template, then replace the placeholder values:
+- ETSI `PAdES`, `XAdES`, `CAdES`, and `ASiC` family standards
+- baseline levels `B-B`, `B-T`, `B-LT`, and `B-LTA`
+- PDF signature standards and ISO PDF extensions
+- W3C XML Signature and canonicalization surfaces
+- CMS, timestamping, PKIX, OCSP, ERS, XMLERS, and related RFCs
+- validation result and validation report modeling
+- cryptographic suite policy and algorithm allowlists
+- regulatory-language boundaries for eIDAS-related claims
 
-```bash
-gh repo create groupsum/example-governance-pack --private --template groupsum/ssot-registry-pack-template --clone
-```
+## Included ADRs
 
-Update these values before the first release:
+- `adr:0900` digital-signature standards targets are reviewed before governance inclusion
 
-- package name in `pyproject.toml`
-- import package directory under `src/`
-- package-data keys in `pyproject.toml`
-- package origin values in packaged ADR and SPEC YAML files
-- manifest rows under `src/<package_name>/templates/**/manifest.json`
-- README domain language and included ADR/SPEC lists
-- test import paths and expected document IDs
+## Included SPECs
 
-## Included Placeholder ADRs
+- `spc:0900` digital-signature governance target review
 
-- `adr:0001` pack governance scope is explicit
+## Proposed ADR And SPEC Set
 
-## Included Placeholder SPECs
+The first detailed proposal is documented in:
 
-- `spc:0001` pack document contract
+[Digital Signature ADR/SPEC Proposal](docs/proposals/digital-signature-adr-spec-proposal.md)
 
-## Authoring Flow
+The source standards matrix copied from TrustSig is available at:
 
-1. Author source ADRs in `.ssot/adr`.
-2. Author source SPECs in `.ssot/specs`.
-3. Run `python scripts/sync_packaged_docs.py` after setting the package paths for the new pack.
-4. Run tests to verify manifests and packaged documents.
-5. Publish the pack only after the ADR/SPEC surface is intentionally scoped.
+[Signature and Container Standards Matrix](docs/standards/signature-and-container-standards-matrix.md)
 
 ## Programmatic Usage
 
 ```python
-from ssot_registry_pack_template import load_document_manifest, read_packaged_document_text
+from digital_signature_governance_pack import load_document_manifest, read_packaged_document_text
 
 adr_manifest = load_document_manifest("adr")
 spec_manifest = load_document_manifest("spec")
@@ -70,11 +60,11 @@ spec_manifest = load_document_manifest("spec")
 print(adr_manifest[0]["id"])
 print(spec_manifest[0]["id"])
 
-text = read_packaged_document_text("spec", "SPEC-0001-pack-document-contract.yaml")
+text = read_packaged_document_text("spec", "SPEC-0900-digital-signature-governance-target-review.yaml")
 print(text[:120])
 ```
 
 ## Resources
 
-- GitHub repository: [groupsum/ssot-registry-pack-template](https://github.com/groupsum/ssot-registry-pack-template)
+- GitHub repository: [groupsum/digital-signature-governance-pack](https://github.com/groupsum/digital-signature-governance-pack)
 - SSOT Registry: [ssot-registry](https://pypi.org/project/ssot-registry/)

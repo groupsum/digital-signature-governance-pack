@@ -2,6 +2,7 @@
 
 ## 0.1.0
 
-- Create a generic SSOT Registry governance-pack template.
-- Add placeholder ADR and SPEC documents for pack-scope and document-contract guidance.
-- Add package manifest tests and reusable authoring documentation.
+- Create the digital-signature governance pack from the SSOT Registry pack template.
+- Add seed ADR and SPEC documents for digital-signature standards target review.
+- Add the TrustSig signature and container standards matrix as the initial target inventory.
+- Add a proposed ADR and SPEC set for digital-signature repositories.

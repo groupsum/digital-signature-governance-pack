@@ -1,0 +1,22 @@
+[
+  {
+    "id": "adr:0900",
+    "number": 900,
+    "slug": "digital-signature-standards-targets-reviewed-before-inclusion",
+    "title": "Digital-signature standards targets are reviewed before governance inclusion",
+    "filename": "ADR-0900-digital-signature-standards-targets-reviewed-before-inclusion.yaml",
+    "target_path": ".ssot/adr/ADR-0900-digital-signature-standards-targets-reviewed-before-inclusion.yaml",
+    "sha256": "9e8789dd3771b3216d05a6e7e3510930e9caabda3f3f79e5f50dee0ebb3eee82",
+    "origin": "digital-signature-governance-pack",
+    "reservation_owner": "digital-signature-governance-pack",
+    "immutable": true,
+    "minimum_schema_version": 4,
+    "introduced_in": "0.1.0",
+    "status": "accepted",
+    "supersedes": [],
+    "superseded_by": [],
+    "status_notes": [
+      "Initial pack scaffold ADR. Detailed downstream governance rows are intentionally proposed before promotion into normative pack documents."
+    ]
+  }
+]

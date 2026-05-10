@@ -7,9 +7,9 @@ from importlib import resources
 def _package_name(kind: str) -> str:
     normalized = kind.lower()
     if normalized in {"adr", "adrs"}:
-        return "ssot_registry_pack_template.templates.adr"
+        return "digital_signature_governance_pack.templates.adr"
     if normalized in {"spec", "specs"}:
-        return "ssot_registry_pack_template.templates.specs"
+        return "digital_signature_governance_pack.templates.specs"
     raise ValueError(f"Unsupported document kind: {kind}")
 
 

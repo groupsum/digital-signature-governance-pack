@@ -1,0 +1,48 @@
+{
+  "id": "adr:0900",
+  "number": 900,
+  "slug": "digital-signature-standards-targets-reviewed-before-inclusion",
+  "title": "Digital-signature standards targets are reviewed before governance inclusion",
+  "status": "accepted",
+  "origin": "digital-signature-governance-pack",
+  "decision_date": "2026-05-10",
+  "supersedes": [],
+  "superseded_by": [],
+  "status_notes": [
+    "Initial pack scaffold ADR. Detailed downstream governance rows are intentionally proposed before promotion into normative pack documents."
+  ],
+  "context": [
+    "Digital-signature governance spans signature families, baseline levels, container forms, timestamping, validation reports, PKI and revocation inputs, long-term archival evidence, cryptographic suite policy, PDF and XML syntax layers, and legal-assurance wording.",
+    "The pack must not encode every adjacent standard as a conformance claim before the target set is reviewed and split into governed behavior surfaces."
+  ],
+  "decision": [
+    "This pack starts with a standards-target review phase.",
+    "Candidate ETSI, ISO, W3C, IETF, and regulatory targets are listed in docs/standards/signature-and-container-standards-matrix.md.",
+    "Only reviewed targets will be promoted into durable ADRs and SPECs.",
+    "Regulatory frameworks such as eIDAS are treated as claim-language boundaries unless a downstream repository supplies explicit legal or certification evidence."
+  ],
+  "consequences": [
+    "The first publishable pack can ship a seed review contract without implying full PAdES, XAdES, CAdES, ASiC, timestamping, or validation-report conformance.",
+    "Future ADRs and SPECs can be split by signature family, baseline level, container behavior, validation semantics, archival behavior, and assurance claim boundary.",
+    "Downstream projects can consume the seed documents while still making explicit inclusion decisions."
+  ],
+  "references": [
+    "ETSI EN 319 142-1 PAdES baseline signatures",
+    "ETSI EN 319 132-1 XAdES baseline signatures",
+    "ETSI EN 319 122-1 CAdES baseline signatures",
+    "ETSI EN 319 162-1 ASiC baseline containers",
+    "ETSI EN 319 102-1 validation procedures",
+    "ETSI TS 119 102-2 validation report",
+    "ETSI EN 319 422 timestamping",
+    "ETSI TS 119 312 cryptographic suites",
+    "ISO 32000-2 PDF 2.0",
+    "W3C XML Signature 1.1",
+    "RFC 5652 CMS",
+    "RFC 3161 timestamp protocol",
+    "RFC 5280 PKIX",
+    "RFC 6960 OCSP",
+    "RFC 4998 ERS",
+    "RFC 6283 XMLERS",
+    "Regulation (EU) No 910/2014 eIDAS"
+  ]
+}
