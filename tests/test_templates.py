@@ -6,7 +6,7 @@ import unittest
 from digital_signature_governance_pack import load_document_manifest, read_packaged_document_text
 
 
-class TemplateManifestTests(unittest.TestCase):
+class PackManifestTests(unittest.TestCase):
     def test_adr_manifest_has_expected_rows(self) -> None:
         manifest = load_document_manifest("adr")
         self.assertEqual(1, len(manifest))
