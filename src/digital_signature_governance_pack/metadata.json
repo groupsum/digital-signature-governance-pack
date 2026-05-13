@@ -1,0 +1,32 @@
+{
+    "schema_version":  "1.0.0",
+    "ssot_package_name":  "digital-signature-governance-pack",
+    "origin":  {
+                   "id":  "pack:digital-signature-governance",
+                   "package_name":  "digital-signature-governance-pack",
+                   "import_name":  "digital_signature_governance_pack",
+                   "kind":  "governance-pack",
+                   "title":  "Digital Signature Governance Pack",
+                   "description":  "Installable SSOT governance pack for digital-signature and container governance documents.",
+                   "homepage":  "https://github.com/groupsum/digital-signature-governance-pack",
+                   "repository":  "https://github.com/groupsum/digital-signature-governance-pack"
+               },
+    "compatibility":  {
+                          "python":  ">=3.10,<3.15",
+                          "ssot_registry_schema":  ">=0.4.0",
+                          "ssot_pack_contract":  ">=0.2.17,<0.3.0"
+                      },
+    "trust":  {
+                  "trusted_by_default":  true,
+                  "origin":  "extension-pack",
+                  "reservation_owner":  "extension-pack:digital-signature-governance-pack"
+              },
+    "documents":  {
+                      "adr":  {
+                                  "manifest_path":  "templates/adr/manifest.json"
+                              },
+                      "spec":  {
+                                   "manifest_path":  "templates/specs/manifest.json"
+                               }
+                  }
+}
