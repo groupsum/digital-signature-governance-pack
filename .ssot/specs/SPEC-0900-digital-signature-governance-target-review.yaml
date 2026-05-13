@@ -1,0 +1,57 @@
+{
+  "id": "spc:0900",
+  "number": 900,
+  "slug": "digital-signature-governance-target-review",
+  "title": "Digital-signature governance target review",
+  "status": "accepted",
+  "spec_kind": "normative",
+  "origin": "digital-signature-governance-pack",
+  "supersedes": [],
+  "superseded_by": [],
+  "status_notes": [
+    "Seed SPEC for review workflow. It defines how candidate standards are promoted into future pack documents."
+  ],
+  "scope": [
+    "digital-signature standards target discovery",
+    "ADR/SPEC inclusion triage",
+    "candidate status labeling as core, supporting, regulatory, watchlist, or excluded"
+  ],
+  "requirements": [
+    {
+      "id": "DSGP-0900-001",
+      "text": "The pack SHALL maintain a standards target inventory before creating detailed digital-signature ADRs and SPECs."
+    },
+    {
+      "id": "DSGP-0900-002",
+      "text": "The inventory SHALL distinguish signature-family standards, container standards, validation and report standards, timestamping standards, cryptographic-suite standards, PDF/XML syntax standards, PKI/revocation RFCs, archival-evidence RFCs, and regulatory frameworks."
+    },
+    {
+      "id": "DSGP-0900-003",
+      "text": "Future normative SPECs SHALL split PAdES, XAdES, CAdES, and ASiC behavior into distinct governed surfaces."
+    },
+    {
+      "id": "DSGP-0900-004",
+      "text": "Future normative SPECs SHALL model B-B, B-T, B-LT, and B-LTA requirements as separate baseline-level obligations when a signature family supports those levels."
+    },
+    {
+      "id": "DSGP-0900-005",
+      "text": "Regulatory references such as eIDAS SHALL constrain assurance and compliance language unless downstream legal or certification evidence justifies stronger claims."
+    }
+  ],
+  "candidate_behavior_surfaces": [
+    "PAdES baseline family support",
+    "XAdES baseline family support",
+    "CAdES baseline family support",
+    "ASiC-S and ASiC-E container support",
+    "B-B, B-T, B-LT, and B-LTA baseline ladders",
+    "timestamp token acquisition and verification",
+    "certificate path and revocation validation",
+    "validation result and report model",
+    "cryptographic suite policy",
+    "PDF signature syntax and extension handling",
+    "XML signature syntax and canonicalization",
+    "long-term archival evidence",
+    "assurance and regulatory claim language"
+  ],
+  "review_artifact": "docs/standards/signature-and-container-standards-matrix.md"
+}
