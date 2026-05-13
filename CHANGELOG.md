@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.1.dev1
+
+- Pending release notes.
+
 ## 0.1.0
 
 - Create the digital-signature governance pack from the SSOT Registry pack template.

@@ -11,7 +11,7 @@
     "reservation_owner": "digital-signature-governance-pack",
     "immutable": true,
     "minimum_schema_version": 4,
-    "introduced_in": "0.1.0",
+    "introduced_in": "0.1.1.dev1",
     "status": "accepted",
     "supersedes": [],
     "superseded_by": [],
