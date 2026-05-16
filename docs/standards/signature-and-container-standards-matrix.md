@@ -128,15 +128,20 @@ This document consolidates the standards and specifications discussed for TrustS
 | `ASiC-E` with `CAdES` | Baseline extended containerized CAdES | `ASiC-E` carrying multi-file or richer package `CAdES` signing flows | `EN 319 162-1`, `EN 319 122-1`, `RFC 5652` | [ETSI EN 319 162-1](https://www.etsi.org/deliver/etsi_en/319100_319199/31916201/01.01.01_60/en_31916201v010101p.pdf), [ETSI EN 319 122-1](https://www.etsi.org/deliver/etsi_en/319100_319199/31912201/01.03.01_60/en_31912201v010301p.pdf), [RFC 5652](https://www.rfc-editor.org/info/rfc5652) |
 | `ASiC-E` with `XAdES` | Baseline extended containerized XAdES | `ASiC-E` carrying multi-file or richer package `XAdES` signing flows | `EN 319 162-1`, `EN 319 132-1`, `XML Signature 1.1` | [ETSI EN 319 162-1](https://www.etsi.org/deliver/etsi_en/319100_319199/31916201/01.01.01_60/en_31916201v010101p.pdf), [ETSI EN 319 132-1](https://www.etsi.org/deliver/etsi_en/319100_319199/31913201/01.03.01_60/en_31913201v010301p.pdf), [W3C XML Signature 1.1](https://www.w3.org/TR/xmldsig-core/) |
 
-## TrustSig SSOT Context
+## TrustSig Pack Context
 
-| TrustSig Surface | Current Repo-Local Contract |
+This governance pack currently ships a target-review ADR and SPEC under `src/digital_signature_governance_pack/templates`.
+Future pack rows should be authored in that package template tree, then linked by stable SSOT ID after the governed surface is accepted.
+
+Candidate downstream contract IDs for future rows include:
+
+| TrustSig Surface | Candidate Contract ID |
 | --- | --- |
-| `PAdES` family support | [SPEC-1010-pades-support-contract.yaml](../.ssot/specs/SPEC-1010-pades-support-contract.yaml) |
-| `XAdES` family support | [SPEC-1011-xades-support-contract.yaml](../.ssot/specs/SPEC-1011-xades-support-contract.yaml) |
-| `CAdES` family support | [SPEC-1012-cades-support-contract.yaml](../.ssot/specs/SPEC-1012-cades-support-contract.yaml) |
-| `ASiC-S` and `ASiC-E` family support | [SPEC-1013-asic-support-contract.yaml](../.ssot/specs/SPEC-1013-asic-support-contract.yaml) |
-| Verification result model | [SPEC-1007-verification-result-model.yaml](../.ssot/specs/SPEC-1007-verification-result-model.yaml) |
-| Assurance/compliance language policy | [SPEC-1001-assurance-and-compliance-language-policy.yaml](../.ssot/specs/SPEC-1001-assurance-and-compliance-language-policy.yaml) |
+| `PAdES` family support | `spc:1010` |
+| `XAdES` family support | `spc:1011` |
+| `CAdES` family support | `spc:1012` |
+| `ASiC-S` and `ASiC-E` family support | `spc:1013` |
+| Verification result model | `spc:1007` |
+| Assurance/compliance language policy | `spc:1001` |
 
-TrustSig's current SSOT governs the family-level support contracts, but it does not yet explicitly model each baseline level such as `PAdES-B-T`, `XAdES-B-LT`, or `CAdES-B-LTA` as separate governed SSOT rows.
+The pack does not yet explicitly model each baseline level such as `PAdES-B-T`, `XAdES-B-LT`, or `CAdES-B-LTA` as separate governed SSOT rows.
