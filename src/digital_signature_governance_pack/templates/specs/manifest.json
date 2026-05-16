@@ -1,27 +1,21 @@
 [
-{
-    "id":  "spc:0900",
-    "number":  900,
-    "slug":  "digital-signature-governance-target-review",
-    "title":  "Digital-signature governance target review",
-    "filename":  "SPEC-0900-digital-signature-governance-target-review.yaml",
-    "target_path":  ".ssot/specs/SPEC-0900-digital-signature-governance-target-review.yaml",
-    "sha256":  "40178e15b5d9b10923cb9744385605fbec5f51c8e66e90ad0ed6652cff86d006",
-    "origin":  "extension-pack",
-    "reservation_owner":  "extension-pack:digital-signature-governance-pack",
-    "immutable":  true,
-    "minimum_schema_version":  "4",
-    "introduced_in":  "0.1.1.dev1",
-    "status":  "accepted",
-    "supersedes":  [
-
-                   ],
-    "superseded_by":  [
-
-                      ],
-    "status_notes":  [
-
-                     ],
-    "kind":  "normative"
-}
+  {
+    "id": "spc:0900",
+    "number": 900,
+    "slug": "digital-signature-governance-target-review",
+    "title": "Digital-signature governance target review",
+    "filename": "SPEC-0900-digital-signature-governance-target-review.yaml",
+    "target_path": ".ssot/specs/SPEC-0900-digital-signature-governance-target-review.yaml",
+    "sha256": "40178e15b5d9b10923cb9744385605fbec5f51c8e66e90ad0ed6652cff86d006",
+    "origin": "extension-pack",
+    "reservation_owner": "extension-pack:digital-signature-governance-pack",
+    "immutable": true,
+    "minimum_schema_version": "0.4.0",
+    "introduced_in": "0.1.1.dev1",
+    "status": "accepted",
+    "supersedes": [],
+    "superseded_by": [],
+    "status_notes": [],
+    "kind": "normative"
+  }
 ]
