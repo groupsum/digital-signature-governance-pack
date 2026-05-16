@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.1.dev2
+
+- Pending release notes.
+
 ## 0.1.1.dev1
 
 - Pending release notes.
