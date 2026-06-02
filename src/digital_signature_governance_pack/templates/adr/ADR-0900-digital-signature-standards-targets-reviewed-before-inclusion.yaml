@@ -1,30 +1,19 @@
 {
+  "schema_version": "0.1.0",
+  "kind": "adr",
   "id": "adr:0900",
   "number": 900,
   "slug": "digital-signature-standards-targets-reviewed-before-inclusion",
   "title": "Digital-signature standards targets are reviewed before governance inclusion",
   "status": "accepted",
-  "origin": "digital-signature-governance-pack",
+  "origin": "extension-pack",
   "decision_date": "2026-05-10",
+  "tags": [],
+  "summary": "This pack starts with a standards-target review phase.",
   "supersedes": [],
   "superseded_by": [],
   "status_notes": [
     "Initial pack scaffold ADR. Detailed downstream governance rows are intentionally proposed before promotion into normative pack documents."
-  ],
-  "context": [
-    "Digital-signature governance spans signature families, baseline levels, container forms, timestamping, validation reports, PKI and revocation inputs, long-term archival evidence, cryptographic suite policy, PDF and XML syntax layers, and legal-assurance wording.",
-    "The pack must not encode every adjacent standard as a conformance claim before the target set is reviewed and split into governed behavior surfaces."
-  ],
-  "decision": [
-    "This pack starts with a standards-target review phase.",
-    "Candidate ETSI, ISO, W3C, IETF, and regulatory targets are listed in docs/standards/signature-and-container-standards-matrix.md.",
-    "Only reviewed targets will be promoted into durable ADRs and SPECs.",
-    "Regulatory frameworks such as eIDAS are treated as claim-language boundaries unless a downstream repository supplies explicit legal or certification evidence."
-  ],
-  "consequences": [
-    "The first publishable pack can ship a seed review contract without implying full PAdES, XAdES, CAdES, ASiC, timestamping, or validation-report conformance.",
-    "Future ADRs and SPECs can be split by signature family, baseline level, container behavior, validation semantics, archival behavior, and assurance claim boundary.",
-    "Downstream projects can consume the seed documents while still making explicit inclusion decisions."
   ],
   "references": [
     "ETSI EN 319 142-1 PAdES baseline signatures",
@@ -44,5 +33,6 @@
     "RFC 4998 ERS",
     "RFC 6283 XMLERS",
     "Regulation (EU) No 910/2014 eIDAS"
-  ]
+  ],
+  "body": "## Context\n\n- Digital-signature governance spans signature families, baseline levels, container forms, timestamping, validation reports, PKI and revocation inputs, long-term archival evidence, cryptographic suite policy, PDF and XML syntax layers, and legal-assurance wording.\n- The pack must not encode every adjacent standard as a conformance claim before the target set is reviewed and split into governed behavior surfaces.\n\n## Decision\n\n- This pack starts with a standards-target review phase.\n- Candidate ETSI, ISO, W3C, IETF, and regulatory targets are listed in docs/standards/signature-and-container-standards-matrix.md.\n- Only reviewed targets will be promoted into durable ADRs and SPECs.\n- Regulatory frameworks such as eIDAS are treated as claim-language boundaries unless a downstream repository supplies explicit legal or certification evidence.\n\n## Consequences\n\n- The first publishable pack can ship a seed review contract without implying full PAdES, XAdES, CAdES, ASiC, timestamping, or validation-report conformance.\n- Future ADRs and SPECs can be split by signature family, baseline level, container behavior, validation semantics, archival behavior, and assurance claim boundary.\n- Downstream projects can consume the seed documents while still making explicit inclusion decisions.\n"
 }

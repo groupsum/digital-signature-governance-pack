@@ -6,7 +6,7 @@
     "title": "Digital-signature governance target review",
     "filename": "SPEC-0900-digital-signature-governance-target-review.yaml",
     "target_path": ".ssot/specs/SPEC-0900-digital-signature-governance-target-review.yaml",
-    "sha256": "40178e15b5d9b10923cb9744385605fbec5f51c8e66e90ad0ed6652cff86d006",
+    "sha256": "453977c63cfa1560f50c43287aa608da8e1bead40f6e9ab2d1238b14c13f9907",
     "origin": "extension-pack",
     "reservation_owner": "extension-pack:digital-signature-governance-pack",
     "immutable": true,

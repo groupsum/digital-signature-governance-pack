@@ -6,7 +6,7 @@
     "title": "Digital-signature standards targets are reviewed before governance inclusion",
     "filename": "ADR-0900-digital-signature-standards-targets-reviewed-before-inclusion.yaml",
     "target_path": ".ssot/adr/ADR-0900-digital-signature-standards-targets-reviewed-before-inclusion.yaml",
-    "sha256": "9e8789dd3771b3216d05a6e7e3510930e9caabda3f3f79e5f50dee0ebb3eee82",
+    "sha256": "3b0a0429ebcebfaf222ad6b0f5034dba6eab4c7fb8e6227e9ce6bca44be55b87",
     "origin": "extension-pack",
     "reservation_owner": "extension-pack:digital-signature-governance-pack",
     "immutable": true,
