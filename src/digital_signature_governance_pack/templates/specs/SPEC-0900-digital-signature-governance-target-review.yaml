@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "kind": "spec",
-  "id": "spc:0900",
+  "id": "spc:digital-signature-governance-target-review",
   "number": 900,
   "slug": "digital-signature-governance-target-review",
   "title": "Digital-signature governance target review",
@@ -19,6 +19,6 @@
   "body": "## Scope\n\n- digital-signature standards target discovery\n- ADR/SPEC inclusion triage\n- candidate status labeling as core, supporting, regulatory, watchlist, or excluded\n\n## Requirements\n\n- DSGP-0900-001: The pack SHALL maintain a standards target inventory before creating detailed digital-signature ADRs and SPECs.\n- DSGP-0900-002: The inventory SHALL distinguish signature-family standards, container standards, validation and report standards, timestamping standards, cryptographic-suite standards, PDF/XML syntax standards, PKI/revocation RFCs, archival-evidence RFCs, and regulatory frameworks.\n- DSGP-0900-003: Future normative SPECs SHALL split PAdES, XAdES, CAdES, and ASiC behavior into distinct governed surfaces.\n- DSGP-0900-004: Future normative SPECs SHALL model B-B, B-T, B-LT, and B-LTA requirements as separate baseline-level obligations when a signature family supports those levels.\n- DSGP-0900-005: Regulatory references such as eIDAS SHALL constrain assurance and compliance language unless downstream legal or certification evidence justifies stronger claims.\n\n## Candidate Behavior Surfaces\n\n- PAdES baseline family support\n- XAdES baseline family support\n- CAdES baseline family support\n- ASiC-S and ASiC-E container support\n- B-B, B-T, B-LT, and B-LTA baseline ladders\n- timestamp token acquisition and verification\n- certificate path and revocation validation\n- validation result and report model\n- cryptographic suite policy\n- PDF signature syntax and extension handling\n- XML signature syntax and canonicalization\n- long-term archival evidence\n- assurance and regulatory claim language\n\n## Review Artifact\n\ndocs/standards/signature-and-container-standards-matrix.md\n",
   "spec_kind": "normative",
   "adr_ids": [
-    "adr:0900"
+    "adr:digital-signature-standards-targets-reviewed-before-inclusion"
   ]
 }

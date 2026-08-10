@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.0.dev1
+
+- Replaced generic seed document IDs with globally unique digital-signature IDs.
+
 ## 0.1.3.dev1
 
 - Pending release notes.

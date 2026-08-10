@@ -17,6 +17,8 @@
 
 </div>
 
+The seed ADR and SPEC use globally unique digital-signature document IDs so they can be installed with the complete governance portfolio.
+
 `digital-signature-governance-pack` is an SSOT Registry pack for digital-signature, advanced electronic signature, container, timestamping, validation, archival, and assurance-language governance.
 
 It gives product, platform, and compliance teams a reusable ADR/SPEC starting point for repositories that need to govern `PAdES`, `XAdES`, `CAdES`, `ASiC-S`, `ASiC-E`, validation reports, timestamping, certificate and revocation handling, long-term archival evidence, and constrained eIDAS-facing claim language.
